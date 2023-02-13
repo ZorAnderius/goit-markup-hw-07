@@ -9,6 +9,28 @@
     max-width: 1128px;
   }
 
+  /* ---HEADER----- */
+  .header-wrap {
+    padding: 24px 0px;
+  }
+
+  .header-navigation {
+    gap: 76px;
+  }
+
+  .header-address-list {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .header-mail-link,
+  .header-phone-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   /* ----HERO----- */
   .hero {
     padding-top: 188px;

@@ -8,6 +8,113 @@
     max-width: 552px;
   }
 
+  /* ---HEADER----- */
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px 0;
+  }
+  .header-navigation {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+  .header-list {
+    margin: 0;
+    display: flex;
+    gap: 40px;
+  }
+  .header-item {
+    display: flex;
+  }
+
+  .header-phone,
+  .header-mail {
+    display: inline-block;
+    text-align: start;
+  }
+
+  .header-mail-link,
+  .header-phone-link {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .header-link {
+    display: flex;
+    flex-direction: column;
+    transition-property: color;
+    transition-duration: var(--time-duration);
+    transition-timing-function: var(--timing-function);
+  }
+
+  .header-item > .current-page {
+    color: var(--accent-color);
+    display: flex;
+    gap: calc(var(--gap_between_img-desktop) - 4px);
+  }
+
+  .header-item > .current-page::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+
+  .header-link,
+  .projects-subtitle {
+    font-weight: var(--title-hero-weight);
+    color: inherit;
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--accent-color);
+  }
+
+  .header-address {
+    display: block;
+    font-style: normal;
+  }
+
+  .header-address-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 10px;
+  }
+
+  .header-mail-link,
+  .header-phone-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--text-desc-color);
+    transition-property: color;
+    transition-duration: var(--time-duration);
+    transition-timing-function: var(--timing-function);
+  }
+
+  .header-mail-link:hover,
+  .header-phone-link:hover,
+  .header-mail-link:focus,
+  .header-phone-link:focus {
+    color: var(--accent-color);
+  }
+
+  .mob-open-menu-btn {
+    display: none;
+  }
+
   /* --HERO----- */
   .hero {
     padding-top: 112px;
