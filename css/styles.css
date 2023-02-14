@@ -181,13 +181,13 @@ img {
   z-index: 1;
   width: 100%;
   height: 100vh;
+  overflow: scroll;
   padding: 40px 40px;
   background-color: var(--hero-back-color);
   transform: translateX(100%);
   transition-property: transform;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--timing-function);
-  overflow: scroll;
 }
 
 .mob-menu.is-open {
