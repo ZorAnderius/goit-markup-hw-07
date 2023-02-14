@@ -187,6 +187,7 @@ img {
   transition-property: transform;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--timing-function);
+  overflow: scroll;
 }
 
 .mob-menu.is-open {
