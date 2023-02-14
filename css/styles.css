@@ -776,7 +776,6 @@ img {
 
 /* ---------Modal window--------- */
 .backdrop {
-  overflow: scroll;
   position: fixed;
   top: 0;
   width: 100%;
@@ -808,7 +807,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  overflow-y: auto;
+  overflow: scroll;
 
   transition-property: transform;
   transition-duration: var(--time-duration);
