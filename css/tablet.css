@@ -122,7 +122,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/people-in-office-tab-1x.jpg);
-    max-width: 768px;
+    min-width: 768px;
     padding-top: 112px;
     padding-bottom: 108px;
   }

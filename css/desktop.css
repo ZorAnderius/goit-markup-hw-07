@@ -41,7 +41,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/people-in-office-desk-1x.jpg);
-    max-width: 1440px;
+    min-width: 1200px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
