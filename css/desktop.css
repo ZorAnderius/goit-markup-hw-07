@@ -8,6 +8,9 @@
   .container-mini.container {
     max-width: 1128px;
   }
+  .section {
+    padding: 120px 0;
+  }
 
   /* ---HEADER----- */
   .header-wrap {
@@ -33,8 +36,25 @@
 
   /* ----HERO----- */
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-in-office-desk-1x.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-desk-2x.jpg);
+    }
   }
   /* ---SECTION 2 index.html */
 
@@ -105,7 +125,7 @@
   /* ----CUSTOMERS------- */
 
   .main-customers {
-    padding: 133px 0 120px 0;
+    padding: 120px 0;
   }
 
   .customers-title {
@@ -119,6 +139,32 @@
 
   .customers-item {
     width: calc((100% - 5 * (var(--gap_between_img-desktop))) / 6);
+  }
+
+  /*--------- Portfolio's styles -------------*/
+
+  /* -----SECTION WITH PROJECTS */
+  .main-projects {
+    padding: 96px 0 120px;
+  }
+
+  .main-portfolio-list {
+    margin-bottom: 72px;
+    gap: var(--gap_between_img-desktop);
+  }
+
+  /* ----SECTION WITH BUTTONS---------- */
+  .main-portfolio-btn {
+    padding: 12px var(--gap_between_img-desktop);
+  }
+
+  .projects-list {
+    row-gap: 48px;
+    column-gap: var(--gap_between_img-desktop);
+  }
+
+  .project-item {
+    width: calc((100% - 2 * var(--gap_between_img-tablet)) / 3);
   }
 
   /* ---FOOTER------ */

@@ -117,8 +117,25 @@
 
   /* --HERO----- */
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-in-office-tab-1x.jpg);
     padding-top: 112px;
     padding-bottom: 108px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-in-office-tab-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -162,6 +179,37 @@
     flex-basis: calc((100% - 2 * var(--gap_between_img-tablet)) / 3);
   }
 
+  /*--------- Portfolio's styles -------------*/
+
+  /* -----SECTION WITH PROJECTS */
+  .main-projects {
+    padding: 64px 0 96px;
+  }
+
+  .main-portfolio-list {
+    margin-bottom: 64px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-width: 100%;
+    gap: var(--gap_between_img-tablet);
+  }
+
+  /* ----SECTION WITH BUTTONS---------- */
+  .main-portfolio-btn {
+    padding: 12px var(--gap_between_img-tablet);
+  }
+
+  .projects-list {
+    min-width: 100%;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: var(--gap_between_img-tablet);
+  }
+
+  .project-item {
+    width: calc((100% - var(--gap_between_img-tablet)) / 2);
+  }
+
   /* -----FOOTER-------- */
   .footer-wrapper {
     display: flex;
@@ -193,5 +241,10 @@
 
   .footer-soc-list {
     gap: var(--gap_between_img-mobile);
+  }
+
+  .modal {
+    min-width: 408px;
+    padding: var(--gap_between_img-desktop);
   }
 }
