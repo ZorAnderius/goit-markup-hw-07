@@ -160,6 +160,8 @@ img {
   display: none;
 }
 
+/* ----Modal-windows-------- */
+
 .mob-open-menu-btn,
 .mob-open-menu-btn-portfolio {
   display: flex;
